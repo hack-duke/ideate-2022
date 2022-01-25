@@ -11,7 +11,7 @@ function Landing() {
 
                 <div id="landing-title">Ideate</div>
                 <h2>a virtual design-thinking conference</h2>
-                <h2>April 10-11, 2021</h2>
+                <h2>2022 details coming soon!</h2>
                 <div id="register-btn">
                     <a target="_blank" rel="noopener noreferrer" href={"https://www.notion.so/hdspring21/Ideate-2021-Design-Guidebook-362b069cf7a447c2a5e270accaee371e"}><span>design guidebook</span></a>
                 </div>
