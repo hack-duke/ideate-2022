@@ -1,0 +1,51 @@
+#speakers {
+    width: 100vw;
+    background-color: var(--cream);
+    padding: 10px 0 100px;
+}
+
+.speakers-container {
+    max-width: 1200px;
+    margin: 0px auto;
+    width: 80%;
+}
+
+.keynote-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.keynote-text {
+    display: block;
+    max-width: 800px;
+}
+
+.keynote-img {
+    width: 350px;
+}
+
+.hans {
+    left: 30px;
+    position: relative;
+}
+
+.lava {
+    right: 50px;
+    position: relative;
+}
+
+.speaker-info {
+    text-align: center;
+    width: 100%;
+}
+
+.speaker-name {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.speaker-title {
+    font-size: 14px;
+    line-height: 15px;
+}

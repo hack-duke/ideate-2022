@@ -1,0 +1,31 @@
+#sponsors {
+    width: 100vw;
+    background-color: var(--cream);
+    padding: 10px 0 100px;
+}
+
+.sponsors-container {
+    max-width: 1200px;
+    margin: 0px auto;
+    width: 80%;
+}
+
+.sponsor-logos {
+    text-align: center;
+    justify-content: space-between;
+    vertical-align: middle;
+}
+
+.sponsor-logos img {
+    margin: 40px;
+}
+
+@media only screen and (max-width: 400px) {
+    .sponsor-title {
+        margin-left: 10%;
+    }
+
+    .sponsors-container {
+        width: 100%;
+    }
+}

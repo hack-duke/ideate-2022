@@ -1,0 +1,81 @@
+@keyframes bg-change {
+    from {opacity: 1;}
+    to {opacity: 0;}
+  }
+
+#landing {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+#bg1, #bg2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    z-index: -1000;
+
+    animation-name: bg-change;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#bg1 {
+    background: linear-gradient(279.79deg, #F6D011 -17.69%, rgba(255, 255, 255, 0) 79.08%), linear-gradient(195.44deg, #FF4E4E 3.68%, rgba(255, 255, 255, 0) 94.87%), #FAF0E3;
+    animation-direction: alternate;
+}
+
+#bg2 {
+    background: linear-gradient(279.79deg, #65BABF -17.69%, rgba(255, 215, 84, 0) 79.08%), linear-gradient(195.44deg, rgba(255, 255, 255, 0) 4.45%, #FFD754 94.87%), #FAF0E3;
+    animation-direction: alternate-reverse;
+}
+
+#landing #header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+
+    color: var(--red);
+}
+
+#landing #landing-title {
+    font-family: Lora;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 92px;
+    text-align: center;
+}
+
+#landing #register-btn {
+    background-color: #FF5732;
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#landing #social-media {
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    font-size: 22px;
+    color: #0C2B4A;
+}
+
+#landing h2 {
+    margin: 8px 0;
+}

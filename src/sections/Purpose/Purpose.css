@@ -1,0 +1,32 @@
+#purpose {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--pink);
+}
+
+.purpose-container {
+    max-width: 700px;
+    width: 70%;
+    margin: 50px auto 0;
+}
+
+#scroll-image {
+    border-radius: 15px;
+    width: fit-content;
+    height: fit-content;
+    max-width: 100%;
+}
+
+.alice-carousel {
+    margin-bottom: 50px;
+}
+
+.purpose-img {
+    border-radius: 8px;
+}
+
+@media only screen and (max-width: 400px) {
+    #purpose {
+        padding-bottom: 100px;
+    }
+}

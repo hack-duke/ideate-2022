@@ -1,0 +1,35 @@
+#about {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--pink);
+  position: relative;
+}
+
+.about-container {
+  max-width: 900px;
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+#about-text {
+  width: 500px;
+}
+
+#about-chapel {
+  width: 350px;
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+
+@media only screen and (max-width: 400px) {
+    #about {
+        padding-bottom: 200px;
+    }
+}
