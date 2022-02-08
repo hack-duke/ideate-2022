@@ -1,14 +1,12 @@
 import React from "react";
 import './Landing.css';
-
+import trees from "../../graphics/assets/landing-page/cover design.svg";
 
 function Landing() {
     return (
         <div id="landing">
             <div id="header">
-                <div id="bg1"></div>
-                <div id="bg2"></div>
-
+                <img id="trees" src={trees} alt="trees"></img>
                 <div id="landing-title">Ideate</div>
                 <h2>a virtual design-thinking conference</h2>
                 <h2>2022 details coming soon!</h2>

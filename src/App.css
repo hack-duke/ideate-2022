@@ -10,6 +10,7 @@
     --yellow: #FFD754;
     --navy: #0C2B4A;
     --cream: #FAF0E3;
+    --black: #0A112B;
 }
 
 .red {
@@ -56,6 +57,11 @@ a {
 }
 
 html, body {
+    position: relative;
+    /*width: 1440px;*/
+    /*height: 5534px;*/
+
+    background: var(--black);
     max-width: 100%;
     overflow-x: hidden;
 }
