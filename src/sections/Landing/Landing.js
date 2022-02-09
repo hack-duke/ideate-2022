@@ -9,9 +9,9 @@ function Landing() {
                 <img id="trees" src={trees} alt="trees"></img>
                 <div id="landing-title">Ideate</div>
                 <h2>a virtual design-thinking conference</h2>
-                <h2>2022 details coming soon!</h2>
+                <h2>April 9-10, 2022</h2>
                 <div id="register-btn">
-                    <a target="_blank" rel="noopener noreferrer" href={"https://www.notion.so/hdspring21/Ideate-2021-Design-Guidebook-362b069cf7a447c2a5e270accaee371e"}><span>design guidebook</span></a>
+                    <a target="_blank" rel="noopener noreferrer" href={""}><span>registration opens soon</span></a>
                 </div>
             </div>
 
