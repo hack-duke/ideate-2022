@@ -16,7 +16,7 @@ function Schedule() {
             </div>
 
             <div className={"schedule-container"}>
-                <h1>Schedule</h1>
+                <h1>Last Year's Schedule</h1>
                 <div className="days">
                     <div className="day">
                         <h3>Saturday April 10</h3>

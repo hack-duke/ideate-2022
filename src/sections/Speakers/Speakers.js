@@ -43,7 +43,7 @@ function Speakers() {
         <div id="speakers">
             <div className={"speakers-container"}>
                 <div className={"keynote-speakers"}>
-                    <h1 style={{marginBottom: "70px"}}>Keynote and Closing Speakers</h1>
+                    <h1 style={{marginBottom: "70px"}}>Last Year's Keynote and Closing Speakers</h1>
                     <div className={"keynote-container"}>
                         <div className={"img-container"}><div className={"keynote-img"}><img className={"hans"} src={hans} alt={"hans"}/></div></div>
                         <div className={"keynote-text"}>
@@ -62,7 +62,7 @@ function Speakers() {
                     </div>
                 </div>
                 <div className={"judges-speakers"}>
-                    <h1 style={{marginBottom: "70px"}}>Speakers and Judges</h1>
+                    <h1 style={{marginBottom: "70px"}}>Last Year's Speakers and Judges</h1>
                     <Swiper
                         spaceBetween={10}
                         autoplay={{
