@@ -16,12 +16,12 @@ function App() {
         <div>
             {window.innerWidth >= 768 && <Navbar/>}
             <Landing/>
-            <About/>
-            <Purpose/>
-            <Schedule/>
-            <Speakers/>
-            <Sponsors/>
-            <FAQ/>
+            {/*<About/>*/}
+            {/*<Purpose/>*/}
+            {/*<Schedule/>*/}
+            {/*<Speakers/>*/}
+            {/*<Sponsors/>*/}
+            {/*<FAQ/>*/}
         </div>
     );
 }

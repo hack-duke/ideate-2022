@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from 'react-native';
 import './Landing.css';
 import trees from "../../graphics/assets/landing-page/cover design.svg";
 
