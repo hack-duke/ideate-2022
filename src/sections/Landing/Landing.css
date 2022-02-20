@@ -2,11 +2,14 @@
     from {opacity: 1;}
     to {opacity: 0;}
   }
-#trees {
-    position: absolute;
-    width: 150%;
-    height: 150%;
-    z-index: 0;
+
+#moon{
+    position: relative;
+    width: 6.9%;
+    height: 6.9%;
+    margin-top: -10rem;
+    transform: translateY(-75px);
+    margin-left: 1000px;
 }
 
 #landing {
@@ -23,17 +26,17 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    position: absolute;
+    /* position: absolute; */
     top: 0; left: 0; bottom: 0; right: 0;
 
     color: var(--red);
 }
 
 #landing-title{
-    font-family: Georgia;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 175px;
+    font-size: 175px; 
     line-height: 199px;
     text-align: center;
     z-index: 1;
