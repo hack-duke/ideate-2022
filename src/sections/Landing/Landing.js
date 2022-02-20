@@ -1,15 +1,17 @@
 import React from "react";
 import './Landing.css';
-import trees from "../../graphics/assets/landing-page/cover design.svg";
+// import trees from "../../graphics/assets/landing-page/cover design.svg";
+import moon from "../../graphics/assets/landing-page/moon.svg";
 
 function Landing() {
     return (
         <div id="landing">
             <div id="header">
-                <img id="trees" src={trees} alt="trees"></img>
+                <img id="moon" src={moon} alt="moon"></img>
+                
                 <div id="landing-title">Ideate</div>
-                <h2>a virtual design-thinking conference</h2>
-                <h2>2022 details coming soon!</h2>
+                <h2>April 9-10, 2022</h2>
+                <h2>Location? | Duke University</h2>
                 <div id="register-btn">
                     <a target="_blank" rel="noopener noreferrer" href={"https://www.notion.so/hdspring21/Ideate-2021-Design-Guidebook-362b069cf7a447c2a5e270accaee371e"}><span>design guidebook</span></a>
                 </div>
