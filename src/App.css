@@ -65,3 +65,11 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
+
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
