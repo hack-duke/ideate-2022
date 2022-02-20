@@ -1,0 +1,87 @@
+#schedule {
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("/src/graphics/schedule-bg.svg");
+    background-repeat: no-repeat, repeat;
+    background-position: bottom;
+    background-color: var(--pink);
+}
+
+.schedule-container {
+    max-width: 1000px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 300px;
+}
+
+.schedule-container .days {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    justify-content: space-around;
+}
+
+.schedule-container .day {
+    width: 40%;
+    min-width: 300px;
+    white-space: pre;
+}
+
+.schedule-container .day h3 {
+    text-align: center;
+    border-bottom: 2px solid var(--red);
+    padding-bottom: 10px;
+}
+
+#blobs {
+    overflow: hidden;
+    width: 100%;
+}
+
+#blobs img {
+    position: absolute;
+    overflow-x: hidden;
+}
+
+#blobs #top-right {
+    top: -150px;
+    right: 0;
+}
+
+#blobs #top-left {
+    top: 0;
+    left: -150px;
+}
+
+#blobs #bottom-right {
+    top: 250px;
+    right: -50px;
+    width: 250px;
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 400px) {
+    #blobs #top-left {
+        top: 550px;
+        left: -150px;
+    }
+
+    #blobs #bottom-right {
+        visibility: visible;
+    }
+}
+
+
