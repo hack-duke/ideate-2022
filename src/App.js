@@ -20,24 +20,17 @@ import Toggle from "./components/Toggler"
 
 function App() {
 
-  const [theme, themeToggler] = useDarkMode();
+  const [theme, themeToggler, mountedComponent] = useDarkMode();
 
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
-  // const [theme, setTheme] = useState('light');
-  // const themeToggler = () => {
-  //   theme === 'light' ? setTheme('dark') : setTheme('light')
-  // }
+  if(!mountedComponent) return <div/>
 
     return (
 
       <ThemeProvider theme={themeMode}>
         <>
           <GlobalStyles/>
-
-            {/* <button onClick={themeToggler}>Switch Theme</button> */}
-
-
               <Router>
                   <div className="navbar-container">
                     <Navbar/>
