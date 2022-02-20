@@ -34,7 +34,7 @@ function FAQ() {
             <div className={"for-more"}>
                 <div style={{margin: "auto auto"}}>
                     <h2 style={{fontFamily: "Lora", fontSize: "35px", marginBottom: "60px"}}>Curious for more?</h2>
-                    <a target="_blank" rel="noopener noreferrer" href={"https://hackduke.typeform.com/to/QJSLODH8"}><span className={"more-button"}>Join Here</span></a>
+                    <a target="_blank" rel="noopener noreferrer" href={""}><span className={"more-button"}>Registration opens soon</span></a>
                 </div>
             </div>
         </div>
