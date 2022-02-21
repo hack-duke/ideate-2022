@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import './Landing.css';
 import lefttree from "../../graphics/assets/landing-page/lefttree.svg";
 import leftlowdoublelightbluetrees from "../../graphics/assets/landing-page/leftlowdoublelightbluetrees.svg";
@@ -30,24 +30,24 @@ class Landing extends React.Component{
         return (
             <div id="landing">
                 <div id="background">
-                    <img id="lefttree" src={lefttree} alt="lefttree"></img>
-                    <img id="leftlowdoublelightbluetrees" src={leftlowdoublelightbluetrees} alt="leftlowdoublelightbluetrees"></img>
-                    <img id="leftwidebluetree" src={leftwidebluetree} alt="leftwidebluetree"></img>
-                    <img id="leftlowbehindroundtree" src={leftlowbehindroundtree} alt="leftlowbehindroundtree"></img>
-                    <img id="lowpinksmalltree" src={lowpinksmalltree} alt="lowpinksmalltree"></img>
-                    <img id="leftnormalpurpletree" src={leftnormalpurpletree} alt="leftnormalpurpletree"></img>
-                    <img id="leftlowweirdrootplant" src={leftlowweirdrootplant} alt="leftlowweirdrootplant"></img>
-                    <img id="leftlowwidebluetree" src={leftlowwidebluetree} alt="leftlowwidebluetree"></img>
-                    <img id="middlelowroundbluebush" src={middlelowroundbluebush} alt="middlelowroundbluebush"></img>
-                    <img id="rightlowdoublebluebehindtrees" src={rightlowdoublebluebehindtrees} alt="rightlowdoublebluebehindtrees"></img>
-                    <img id="lowrightdoublebluetree" src={lowrightdoublebluetree} alt="lowrightdoublebluetree"></img>
-                    <img id="rightlowpinkcircletree" src={rightlowpinkcircletree} alt="rightlowpinkcircletree"></img>
-                    <img id="rightnormalbluetree" src={rightnormalbluetree} alt="rightnormalbluetree"></img>
-                    <img id="rightbigbluetree" src={rightbigbluetree} alt="rightbigbluetree"></img>
-                    <img id="righthalfwidebluetree" src={righthalfwidebluetree} alt="righthalfwidebluetree"></img>
-                    <img id="rightlowpinkroundduplicatebush" src={rightlowpinkroundduplicatebush} alt="rightlowpinkroundduplicatebush"></img>
-                    <img id="rightbluesmalltree" src={rightbluesmalltree} alt="rightbluesmalltree"></img>
-                    <img id="land" src={land} alt="land"></img>
+                    <img id="lefttree" class = "runleft" src={lefttree} alt="lefttree"></img>
+                    <img id="leftlowdoublelightbluetrees" class = "runleft" src={leftlowdoublelightbluetrees} alt="leftlowdoublelightbluetrees"></img>
+                    <img id="leftwidebluetree" class = "runleft" src={leftwidebluetree} alt="leftwidebluetree"></img>
+                    <img id="leftlowbehindroundtree" class = "runleft" src={leftlowbehindroundtree} alt="leftlowbehindroundtree"></img>
+                    <img id="lowpinksmalltree" class = "runleft" src={lowpinksmalltree} alt="lowpinksmalltree"></img>
+                    <img id="leftnormalpurpletree" class = "runleft" src={leftnormalpurpletree} alt="leftnormalpurpletree"></img>
+                    <img id="leftlowweirdrootplant" class = "runleft" src={leftlowweirdrootplant} alt="leftlowweirdrootplant"></img>
+                    <img id="leftlowwidebluetree" class = "runleft" src={leftlowwidebluetree} alt="leftlowwidebluetree"></img>
+                    <img id="middlelowroundbluebush" class="runright" src={middlelowroundbluebush} alt="middlelowroundbluebush"></img>
+                    <img id="rightlowdoublebluebehindtrees" class="runright" src={rightlowdoublebluebehindtrees} alt="rightlowdoublebluebehindtrees"></img>
+                    <img id="lowrightdoublebluetree" class="runright" src={lowrightdoublebluetree} alt="lowrightdoublebluetree"></img>
+                    <img id="rightlowpinkcircletree" class="runright" src={rightlowpinkcircletree} alt="rightlowpinkcircletree"></img>
+                    <img id="rightnormalbluetree" class="runright" src={rightnormalbluetree} alt="rightnormalbluetree"></img>
+                    <img id="rightbigbluetree" class="runright" src={rightbigbluetree} alt="rightbigbluetree"></img>
+                    <img id="righthalfwidebluetree" class="runright" src={righthalfwidebluetree} alt="righthalfwidebluetree"></img>
+                    <img id="rightlowpinkroundduplicatebush" class="runright" src={rightlowpinkroundduplicatebush} alt="rightlowpinkroundduplicatebush"></img>
+                    <img id="rightbluesmalltree" class="runright" src={rightbluesmalltree} alt="rightbluesmalltree"></img>
+                    <img id="land" class="slowrunright" src={land} alt="land"></img>
                 </div>
                 <div id="header">
                     <div id="landing-title">Ideate</div>

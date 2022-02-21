@@ -25,6 +25,12 @@
     }
 }
 
+.runleft {
+    animation: runleft 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+}
+
 @keyframes runright {
     0% {
       transform: translateX(0px);
@@ -34,6 +40,27 @@
     }
 }
 
+.runright {
+    animation: runright 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+}
+
+@keyframes slowrunright {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(50px);
+    }
+}
+
+.slowrunright {
+    animation: slowrunright 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+}
+
 #lefttree {
     position: absolute;
     height: 82%;
@@ -41,9 +68,6 @@
     z-index: 20;
     left: -34%;
     top: 16%;
-    animation: runleft 1s linear infinite;
-    animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * -1s);
 }
 
 #leftlowdoublelightbluetrees {
@@ -53,9 +77,6 @@
     z-index: 21;
     left: -12%;
     top: 78%;
-    animation: runleft 1s linear infinite;
-    animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * -1s);
 }
 
 #leftwidebluetree {
@@ -65,9 +86,6 @@
     z-index: 18;
     left: -17%;
     top: 38%;
-    animation: runleft 1s linear infinite;
-    animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * -1s);
 }
 
 #leftlowbehindroundtree {
@@ -77,9 +95,6 @@
     z-index: 15;
     left: -3%;
     top: 62%;
-    animation: runleft 1s linear infinite;
-    animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * -1s);
 }
 
 #lowpinksmalltree {
@@ -89,9 +104,6 @@
     z-index: 22;
     left: 5%;
     top: 79%;
-    animation: runleft 1s linear infinite;
-    animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * -1s);
 }
 
 #leftnormalpurpletree {
@@ -101,9 +113,6 @@
     z-index: 21;
     left: 2%;
     top: 64%;
-    animation: runleft 1s linear infinite;
-    animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * -1s);
 }
 
 #leftlowweirdrootplant {
@@ -113,9 +122,6 @@
     z-index: 14;
     left: 7%;
     top: 82%;
-    animation: runleft 1s linear infinite;
-    animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * -1s);
 }
 
 #leftlowwidebluetree {
@@ -125,9 +131,6 @@
     z-index: 22;
     left: 25%;
     top: 80%;
-    animation: runleft 1s linear infinite;
-    animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * -1s);
 }
 
 #middlelowroundbluebush {
@@ -137,9 +140,6 @@
     z-index: 22;
     left: 39%;
     top: 89%;
-    animation: runright 1s linear infinite;
-    animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * -1s);
 }
 
 #rightlowdoublebluebehindtrees {
@@ -149,9 +149,6 @@
     z-index: 18;
     left: 49%;
     top: 73%;
-    animation: runright 1s linear infinite;
-    animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * -1s);
 }
 
 #lowrightdoublebluetree {
@@ -161,9 +158,6 @@
     z-index: 23;
     left: 56.3%;
     top: 83%;
-    animation: runright 1s linear infinite;
-    animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * -1s);
 }
 
 #rightlowpinkcircletree {
@@ -173,9 +167,6 @@
     z-index: 24;
     left: 70.7%;
     top: 89%;
-    animation: runright 1s linear infinite;
-    animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * -1s);
 }
 
 #rightnormalbluetree {
@@ -185,9 +176,6 @@
     z-index: 22;
     left: 54.5%;
     top: 54%;
-    animation: runright 1s linear infinite;
-    animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * -1s);
 }
 
 #rightbigbluetree {
@@ -197,9 +185,6 @@
     z-index: 17;
     left: 49%;
     top: 20%;
-    animation: runright 1s linear infinite;
-    animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * -1s);
 }
 
 #righthalfwidebluetree {
@@ -209,9 +194,6 @@
     z-index: 22;
     left: 64.7%;
     top: 37%;
-    animation: runright 1s linear infinite;
-    animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * -1s);
 }
 
 #rightlowpinkroundduplicatebush {
@@ -221,9 +203,6 @@
     z-index: 28;
     left: 76%;
     top: 76%;
-    animation: runright 1s linear infinite;
-    animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * -1s);
 }
 
 #rightbluesmalltree {
@@ -233,9 +212,6 @@
     z-index: 20;
     left: 78.4%;
     top: 22%;
-    animation: runright 1s linear infinite;
-    animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * -1s);
 }
 
 #land {
