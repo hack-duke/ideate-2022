@@ -1,4 +1,4 @@
-#schedule {
+#tracks {
     width: 100vw;
     min-height: 100vh;
     position: relative;
@@ -8,13 +8,21 @@
     justify-content: center;
     align-items: center;
 
-    background-image: url("/src/graphics/schedule-bg.svg");
+    background-image: url("");
     background-repeat: no-repeat, repeat;
     background-position: bottom;
-    background-color: var(--pink);
+    background-color: #D5DDF0;
 }
 
-.schedule-container {
+h1 {
+    font-family: Lato;
+    font-weight: bold;
+    color: #151B3C;
+    font-size: 35px;
+}
+
+.tracks-container {
+    margin-top: 10%;
     max-width: 1000px;
     width: 70%;
     display: flex;
@@ -24,31 +32,42 @@
     padding-bottom: 300px;
 }
 
-.schedule-container .days {
+.tracks-container .track-table {
     width: 100%;
 
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-
+    
     justify-content: space-around;
 }
 
-.schedule-container .day {
-    width: 40%;
+.tracks-container .track {
+    width: 20%;
     min-width: 300px;
-    white-space: pre;
+    white-space: normal;
 }
 
-.schedule-container .day h3 {
+.tracks-container .track h3 {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 22px;
+
+    /* identical to box height */
+    letter-spacing: 0.05em;
+
+    color: #222F58;
     text-align: center;
-    border-bottom: 2px solid var(--red);
     padding-bottom: 10px;
 }
 
-#blobs {
-    overflow: hidden;
-    width: 100%;
+.tracks-container .track img {
+    height: 35%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #blobs img {
@@ -56,32 +75,12 @@
     overflow-x: hidden;
 }
 
-#blobs #top-right {
-    top: -150px;
-    right: 0;
+#top {
+    margin-top: -15%;
 }
 
-#blobs #top-left {
-    top: 0;
-    left: -150px;
+#bottom {
+    margin-top: -25%;
+    position: relative;
+    width: 100vw;
 }
-
-#blobs #bottom-right {
-    top: 250px;
-    right: -50px;
-    width: 250px;
-    visibility: hidden;
-}
-
-@media only screen and (max-width: 400px) {
-    #blobs #top-left {
-        top: 550px;
-        left: -150px;
-    }
-
-    #blobs #bottom-right {
-        visibility: visible;
-    }
-}
-
-
