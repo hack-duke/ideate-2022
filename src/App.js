@@ -20,7 +20,7 @@ function App() {
             <About/>
             <Tracks/>
             {/*<Purpose/>*/}
-            {/*<Schedule/>*/}
+            <Schedule/>
             {/*<Speakers/>*/}
             {/*<Sponsors/>*/}
             {/*<FAQ/>*/}

@@ -1,22 +1,15 @@
 import React from "react";
 import './Schedule.css';
 
-import tr from '../../graphics/schedule-top-right.svg';
-import bl from '../../graphics/schedule-bottom-left.svg';
-import br from '../../graphics/schedule-bottom-right.svg';
+import clouds from '../../graphics/schedule-top-right.svg';
 
 
 function Schedule() {
     return (
         <div id="schedule">
-            <div id="blobs">
-                <img id="top-right" src={tr} alt="blob"></img>
-                <img id="top-left" src={bl} alt="blob"></img>
-                <img id="bottom-right" src={br} alt="blob"></img>
-            </div>
-
             <div className={"schedule-container"}>
-                <h1>Last Year's Schedule</h1>
+                <h1 id="schedule-title">Schedule</h1>
+
                 <div className="days">
                     <div className="day">
                         <h3>Saturday April 10</h3>
