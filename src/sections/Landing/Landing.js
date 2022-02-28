@@ -23,7 +23,7 @@ import land from "../../graphics/assets/landing-page/land.svg";
 class Landing extends React.Component{
     componentDidMount(){
         window.addEventListener('scroll', () => {
-            document.body.style.setProperty('--scroll', window.pageYOffset / ((document.body.offsetHeight + 0.000001) - window.innerHeight));
+            document.body.style.setProperty('--scroll', window.pageYOffset / ((document.body.children[1].children[0].children[1].offsetHeight) + (document.body.children[1].children[0].children[2].offsetHeight)));
           }, false);
     }
     render(){

@@ -4,7 +4,7 @@ import './Navbar.css';
 
 function Navbar() {
     const handleScroll = () => {
-        if (window.scrollY > window.innerHeight) {
+        if (window.scrollY > document.body.children[1].children[0].children[1].offsetHeight) {
             document.querySelector("#navbar").className = "navbar-color"
             document.querySelector("#navbar-title").className = "navbar-title visible"
         } else {
