@@ -23,7 +23,7 @@ function App() {
             <Schedule/>
             {/*<Speakers/>*/}
             {/*<Sponsors/>*/}
-            {/*<FAQ/>*/}
+            <FAQ/>
         </div>
     );
 }
