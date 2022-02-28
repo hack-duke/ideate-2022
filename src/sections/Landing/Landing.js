@@ -6,7 +6,7 @@ function Landing() {
     return (
         <div id="landing">
             <div id="header">
-                <img id="trees" src={trees} alt="trees"></img>
+                <img id="trees" src={trees}></img>
                 <div id="landing-title">Ideate</div>
                 <h2>a virtual design-thinking conference</h2>
                 <h2>April 9-10, 2022</h2>

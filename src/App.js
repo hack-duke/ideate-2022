@@ -17,8 +17,8 @@ function App() {
         <div>
             {window.innerWidth >= 768 && <Navbar/>}
             <Landing/>
+            <About/>
             <Tracks/>
-            {/*<About/>*/}
             {/*<Purpose/>*/}
             {/*<Schedule/>*/}
             {/*<Speakers/>*/}
