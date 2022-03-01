@@ -21,7 +21,7 @@ function App() {
             {/*<About/>*/}
             {/*<Purpose/>*/}
             {/*<Schedule/>*/}
-            {/*<Speakers/>*/}
+            <Speakers/>
             {/*<Sponsors/>*/}
             {/*<FAQ/>*/}
         </div>

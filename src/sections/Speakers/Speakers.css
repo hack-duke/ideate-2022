@@ -1,51 +1,97 @@
+@media all and (max-height: 1000px) {
+    
+}
+
 #speakers {
-    width: 100vw;
-    background-color: var(--cream);
-    padding: 10px 0 100px;
+  background-color: #E5E5E5;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.speakers-container {
-    max-width: 1200px;
-    margin: 0px auto;
-    width: 80%;
+#speakers h1{
+    color: #32467A;
+    translate: 0px, 80px;
 }
 
-.keynote-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 50px;
-}
-
-.keynote-text {
-    display: block;
-    max-width: 800px;
-}
-
-.keynote-img {
-    width: 350px;
-}
-
-.hans {
-    left: 30px;
-    position: relative;
-}
-
-.lava {
-    right: 50px;
-    position: relative;
-}
-
-.speaker-info {
-    text-align: center;
+#speakers-container{
     width: 100%;
+    height: 90%;
+    margin-bottom: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;   /*review!!*/
+    width: 60%;
+    opacity: 0;
+    transition: opacity ease-in-out 0.4s;
+}  
+.active-anim {
+    opacity: 1;
+  }
+
+.slide img{
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-.speaker-name {
-    font-size: 18px;
-    margin-bottom: 8px;
+.slide h3, h4{
+    margin-block-start: 0.7em;
+    margin-block-end: 0.3em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
-.speaker-title {
-    font-size: 14px;
-    line-height: 15px;
+.btn-slide {
+    cursor: pointer;
+    border: none;
 }
+  
+.next {
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    font-size: 3rem;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+
+.prev {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    font-size: 3rem;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+
+.container-dots {
+    position: relative;
+    display: flex;
+    bottom: 50px;
+  }
+  .dot {
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    margin: 0 5px;
+    background: #D5DDF0;
+  }
+  .dot.active {
+    background-image: url("../../graphics/assets/speakers/currentDot.svg");
+  }
