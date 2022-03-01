@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 #faq {
     width: 100vw;
     /* background-color:#6C7BA0; */
@@ -10,29 +12,32 @@
 }
 
 #faq h1 {
-    font-family: Rany;
+    text-align: center;
+    font-family: Montserrat;
     font-style: normal;
-    font-weight: bold;
-    font-size: 35px;
+    font-weight: normal;
+    font-size: 40px;
     line-height: 112%;
     /* or 39px */
     
-    letter-spacing: 0.05em;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     
     color: #FEFEFE;
+    
+    /* border: 0.5px solid #FEFEFE; */
 }
 #faq h2 {
-    font-family: Rany;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 17px;
     line-height: 112%;
-/* identical to box height, or 19px */
+    /* identical to box height, or 19px */
 
-letter-spacing: 0.05em;
+    letter-spacing: 0.05em;
 
-color: #FEFEFE;
+    color: #FEFEFE;
 }
 
 #faq p {
