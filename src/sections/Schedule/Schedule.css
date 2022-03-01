@@ -8,10 +8,14 @@
     justify-content: center;
     align-items: center;
 
-    background-image: url("/src/graphics/schedule-bg.svg");
-    background-repeat: no-repeat, repeat;
+    background-image: url("/src/graphics/assets/schedule/clouds.svg");
     background-position: bottom;
-    background-color: var(--pink);
+    background-size: cover;
+    background-color: #222F58;
+}
+
+#schedule-title {
+    color: white;
 }
 
 .schedule-container {
@@ -22,6 +26,8 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 300px;
+    color: white;
+    margin-top: 100px;
 }
 
 .schedule-container .days {
@@ -42,35 +48,8 @@
 
 .schedule-container .day h3 {
     text-align: center;
-    border-bottom: 2px solid var(--red);
+    border-bottom: 2px solid var(--black);
     padding-bottom: 10px;
-}
-
-#blobs {
-    overflow: hidden;
-    width: 100%;
-}
-
-#blobs img {
-    position: absolute;
-    overflow-x: hidden;
-}
-
-#blobs #top-right {
-    top: -150px;
-    right: 0;
-}
-
-#blobs #top-left {
-    top: 0;
-    left: -150px;
-}
-
-#blobs #bottom-right {
-    top: 250px;
-    right: -50px;
-    width: 250px;
-    visibility: hidden;
 }
 
 @media only screen and (max-width: 400px) {

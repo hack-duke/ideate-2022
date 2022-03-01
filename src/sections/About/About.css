@@ -1,8 +1,11 @@
 #about {
   width: 100vw;
-  height: 100vh;
-  background-color: var(--pink);
+  height: 130vh;
+  background-color: var(--black);
   position: relative;
+  display: flex;
+  flex-direction: row;
+  /*overflow: auto;*/
 }
 
 .about-container {
@@ -18,13 +21,49 @@
 }
 
 #about-text {
-  width: 500px;
+  width: 600px;
+  color: #FEFEFE;
+
 }
 
-#about-chapel {
-  width: 350px;
-  max-width: 100%;
-  border-radius: 15px;
+#about-title {
+  text-align: center;
+  /*font-family: Rany;*/
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 45px;
+  line-height: 112%;
+  color: #FEFEFE;
+
+  /*margin-top: 50px;*/
+  margin-bottom: 50px;
+}
+
+#about-subtitle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 18px;
+}
+
+#about-content {
+  margin-bottom: 50px;
+}
+
+#left {
+  position: absolute;
+  height: 105%;
+  top: 0;
+  left: 0;
+}
+
+#right {
+  position: absolute;
+  height: 75%;
+  bottom: -40px;
+  right: 0;
 }
 
 

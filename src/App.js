@@ -17,13 +17,15 @@ function App() {
         <div>
             {window.innerWidth >= 768 && <Navbar/>}
             <Landing/>
+            <About/>
             <Tracks/>
-            {/*<About/>*/}
             {/*<Purpose/>*/}
             {/*<Schedule/>*/}
             <Speakers/>
+            <Schedule/>
+            {/*<Speakers/>*/}
             {/*<Sponsors/>*/}
-            {/*<FAQ/>*/}
+            <FAQ/>
         </div>
     );
 }
