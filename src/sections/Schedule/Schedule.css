@@ -4,13 +4,13 @@
     position: relative;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 
     background-image: url("/src/graphics/assets/schedule/clouds.svg");
     background-position: bottom;
-    background-size: cover;
+    background-size: contain;
     background-color: #222F58;
 }
 
@@ -30,7 +30,7 @@
     margin-top: 100px;
 }
 
-.schedule-container .days {
+.schedule-container.days {
     width: 100%;
 
     display: flex;
@@ -39,6 +39,8 @@
 
     justify-content: space-around;
 }
+
+
 
 .schedule-container .day {
     width: 40%;
