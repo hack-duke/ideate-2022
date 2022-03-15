@@ -1,4 +1,4 @@
-#navbar {
+/* #navbar {
     position: fixed;
     top: 0;
     left: 0;
@@ -55,4 +55,104 @@
     line-height: 24px;
     padding: 10px 40px 40px;
     color: #FFFFFF;
+} */
+
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+    width: 100%;
+    height: 75px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(#0c1b4b 100%, rgba(251, 230, 219, 0) 100%);
+    transition: background-color 200ms linear;
 }
+
+#navbar-title {
+    font-family: Lora;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 41px;
+    padding-top: 17px;
+    padding-right: 70px;
+
+    color: #FFFFFF;
+}
+
+#navbar #contents {
+    width: inherit;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#navbar #content-left{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.navbar-text {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    font-family: Lato;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0px 15px;
+    color: #FFFFFF;
+}
+
+.navbar-link {
+    align-self: center;
+}
+
+.white-line {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 5px;
+    margin-top: 20px;
+    visibility: hidden;
+}
+
+#about-texts:hover .white-line {
+    visibility: visible;
+}
+
+#tracks-texts:hover .white-line {
+    visibility: visible;
+}
+
+#speakers-texts:hover .white-line {
+    visibility: visible;
+}
+
+#schedule-texts:hover .white-line {
+    visibility: visible;
+}
+
+#faq-texts:hover .white-line {
+    visibility: visible;
+}
+
+/* #sponsors-texts:hover .white-line {
+    visibility: visible;
+} */
