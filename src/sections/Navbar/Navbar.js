@@ -15,7 +15,18 @@ function Navbar() {
 
     // window.addEventListener("scroll", handleScroll);
 
+
+    var prevScrollPos = window.pageYOffset;
+
     const handleScroll = () => {
+        var scrollPos = window.pageYOffset;
+        if (scrollPos > prevScrollPos) {
+            document.getElementById("navbar").style.top = "-70px";
+        } else {
+            document.getElementById("navbar").style.top = "0px";
+        }
+        prevScrollPos = scrollPos;
+
         document.querySelector("#faq-texts").children[1].style.visibility = ""
         document.querySelector("#schedule-texts").children[1].style.visibility = ""
         document.querySelector("#speakers-texts").children[1].style.visibility = ""
