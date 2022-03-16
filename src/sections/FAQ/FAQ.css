@@ -2,13 +2,27 @@
 
 #faq {
     width: 100vw;
+    height: auto;
+    /* min-height: 100vw; */
     /* background-color:#6C7BA0; */
-    background: linear-gradient(180deg, #0E183D 0%, #4A2450 85.42%);
-    padding: 100px 0;
+    /* background: linear-gradient(180deg, #0E183D 0%, #4A2450 85.42%); */
+    background: #151B3C;
+    /* padding: 100px 0; */
     /* background-image: url("/src/graphics/faq-bg.svg"); */
     background-repeat: no-repeat, repeat;
-    background-size: 2500px;
+    background-size: contain;
     background-position: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    overflow: hidden;
+    /* overflow-x:hidden;
+    overflow-y:hidden; */
 }
 
 #faq h1 {
@@ -24,6 +38,11 @@
     text-transform: uppercase;
     
     color: #FEFEFE;
+
+    padding-top: 0px;
+    padding-bottom: 100px;
+
+    margin: auto;
     
     /* border: 0.5px solid #FEFEFE; */
 }
@@ -62,9 +81,10 @@
 }
 
 .faq-text {
-    width: 70%;
     max-width: 1000px;
-    margin: 0 auto 100px;
+    width: 70%;
+    margin: auto;
+    /* position: absolute; */
 }
 
 .faq-details {
@@ -76,7 +96,22 @@
 
 .faq-col, .faq-col {
     width: 400px;
+    padding: 0px 20px;
 }
+
+#left {
+    position: absolute;
+    height: 105%;
+    top: 0;
+    left: 0;
+  }
+  
+#right {
+    position: absolute;
+    height: 75%;
+    bottom: -40px;
+    right: 0;
+  }
 
 .for-more {
     width: 100%;

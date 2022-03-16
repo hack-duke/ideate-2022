@@ -1,9 +1,13 @@
 import React from "react";
 import './FAQ.css';
 
+import left from "../../graphics/assets/faq-page/left-design.svg";
+import right from "../../graphics/assets/faq-page/right-design.svg";
+
 function FAQ() {
     return (
         <div id="faq">
+            <img src={left} id="left"></img>
             <div className="faq-text">
                 <h1>FAQ</h1>
                 <div className="faq-details">
@@ -31,6 +35,7 @@ function FAQ() {
                     </div>
                 </div>
             </div>
+            <img src={right} id="right"></img>
             {/* <div className={"for-more"}>
                 <div style={{margin: "auto auto"}}>
                     <h2 style={{fontFamily: "Lora", fontSize: "35px", marginBottom: "60px"}}>Curious for more?</h2>
