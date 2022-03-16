@@ -8,10 +8,10 @@ function Landing() {
             <div id="header">
                 <img id="trees" src={trees}></img>
                 <div id="landing-title">Ideate</div>
-                <h2>a virtual design-thinking conference</h2>
+                <h2>A virtual design-thinking conference</h2>
                 <h2>April 9-10, 2022</h2>
-                <div id="register-btn">
-                    <a target="_blank" rel="noopener noreferrer" href={""}><span>registration opens soon</span></a>
+                <div id="register-btn" style={{zIndex: 999}}>
+                    <a target="_blank" rel="noopener noreferrer" href={"https://tinyurl.com/ideate2022"}><span>Register now!</span></a>
                 </div>
             </div>
 
