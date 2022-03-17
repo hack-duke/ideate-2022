@@ -46,7 +46,8 @@ function Speakers(){
     return(
         <div id="speakers">
             <h1>SPEAKERS</h1>
-            <div id="speakers-container">
+            <h1>Coming soon!</h1>
+            {/* <div id="speakers-container">
                 <ButtonSlider moveSlide={prevSlide} direction={"prev"}/>
                     {speakers.map((obj, index) => {
                         return (
@@ -72,7 +73,7 @@ function Speakers(){
                             className={slideIndex === index + 1 ? "dot active" : "dot"}
                             ></div>
                         ))}
-            </div>
+            </div> */}
         </div>
     )
 }

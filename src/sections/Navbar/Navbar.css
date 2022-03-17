@@ -73,7 +73,7 @@
     align-items: center;
 
     /* background: linear-gradient(#0c1b4b 0%, rgba(251, 230, 219, 0) 100%); */
-    /* background: rgba(10, 17, 43); */
+    background: rgba(10, 17, 43);
     transition: background-color 200ms linear;
     transition: top 60ms linear;
 
