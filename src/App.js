@@ -9,6 +9,7 @@ import FAQ from "./sections/FAQ/FAQ";
 import Speakers from "./sections/Speakers/Speakers";
 import Purpose from "./sections/Purpose/Purpose";
 import Sponsors from "./sections/Sponsors/Sponsors";
+import Transition from "./sections/Transition/Transition.js"
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
             {window.innerWidth >= 768 && <Navbar/>}
             <Landing/>
             <About/>
+            <Transition color1={"#FFFFFF"} color2={"#AAAAAA"}/>
             <Tracks/>
             {/*<Purpose/>*/}
             {/*<Schedule/>*/}
