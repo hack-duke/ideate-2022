@@ -13,16 +13,27 @@
     background-image: url("");
     background-repeat: no-repeat, repeat;
     background-position: bottom;
-    background-color: #D5DDF0;
+    background-color: #222F58;
 
     font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
 }
 
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    color: #151B3C;
     font-size: 35px;
+}
+
+#top {
+    margin-bottom: -25%;
+    position: relative;
+    width: 100vw;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .tracks-container {
@@ -61,7 +72,6 @@ h1 {
     /* identical to box height */
     letter-spacing: 0.05em;
 
-    color: #222F58;
     text-align: center;
     padding-bottom: 10px;
 }

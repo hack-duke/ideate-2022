@@ -3,7 +3,7 @@ import './Tracks.css';
 
 import top from '../../graphics/assets/tracks/tracks-top.svg';
 import bottom from '../../graphics/assets/tracks/tracks-bottom.svg';
-import health from '../../graphics/assets/tracks/health-icon.svg';
+import health from '../../graphics/assets/tracks/health-icon-glow.svg';
 import inequality from '../../graphics/assets/tracks/inequality-icon.svg';
 import education from '../../graphics/assets/tracks/education-icon.svg';
 import environment from '../../graphics/assets/tracks/environment-icon.svg';
@@ -11,11 +11,11 @@ import environment from '../../graphics/assets/tracks/environment-icon.svg';
 function Tracks() {
     return (
         <div id="tracks">
-            <div id="blobs">
-                <img id="top" src={top} alt="blob"></img>
-            </div>
+            <img id="top" src={top} alt="blob"></img>
             <div className={"tracks-container"}>
                 <h1>TRACKS</h1>
+                <h4>HackDuke emphasizes its commitment to social good through four unique project tracks.</h4>
+                <h4></h4>
                 <div className="track-table">
                     <div className="track">
                         <img id="health" src={health}></img>
