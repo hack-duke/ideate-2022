@@ -1,5 +1,6 @@
 import React from "react";
 import './Navbar.css';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 
 function Navbar() {
@@ -60,23 +61,23 @@ function Navbar() {
             <div id="contents">
                 <div id="content-left">
                     <div id="about-texts" className="navbar-text">
-                        <a className="navbar-link" target="_blank" rel="noopener noreferrer" href={"#about"}>About</a>
+                        <AnchorLink className="navbar-link" rel="noopener noreferrer" href={"#about"}>About</AnchorLink>
                         <span className="white-line">&nbsp;</span>
                     </div>
                     <div id="tracks-texts" className="navbar-text">
-                        <a className="navbar-link" target="_blank" rel="noopener noreferrer" href={"#tracks"}>Tracks</a>
+                        <AnchorLink className="navbar-link" rel="noopener noreferrer" href={"#tracks"}>Tracks</AnchorLink>
                         <span className="white-line">&nbsp;</span>
                     </div>
                     <div id="speakers-texts" className="navbar-text">
-                        <a className="navbar-link" target="_blank" rel="noopener noreferrer" href={"#speakers"}>Speakers</a>
+                        <AnchorLink className="navbar-link" rel="noopener noreferrer" href={"#speakers"}>Speakers</AnchorLink>
                         <span className="white-line">&nbsp;</span>
                     </div>
                     <div id="schedule-texts" className="navbar-text">
-                        <a className="navbar-link" target="_blank" rel="noopener noreferrer" href={"#schedule"}>Schedule</a>
+                        <AnchorLink className="navbar-link" rel="noopener noreferrer" href={"#schedule"}>Schedule</AnchorLink>
                         <span className="white-line">&nbsp;</span>
                     </div>
                     <div id="faq-texts" className="navbar-text">
-                        <a className="navbar-link" target="_blank" rel="noopener noreferrer" href={"#faq"}>FAQ</a>
+                        <AnchorLink className="navbar-link" rel="noopener noreferrer" href={"#faq"}>FAQ</AnchorLink>
                         <span className="white-line">&nbsp;</span>
                     </div>
                     {/* <div id="sponsors-texts" className="navbar-text">
