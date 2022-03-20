@@ -7,6 +7,7 @@ import Tracks from './sections/Tracks/Tracks.js';
 import Schedule from './sections/Schedule/Schedule.js';
 import FAQ from "./sections/FAQ/FAQ";
 import Speakers from "./sections/Speakers/Speakers";
+import Footer from "./sections/Footer/Footer.js"
 import Purpose from "./sections/Purpose/Purpose";
 import Sponsors from "./sections/Sponsors/Sponsors";
 
@@ -26,6 +27,7 @@ function App() {
             {/*<Speakers/>*/}
             {/*<Sponsors/>*/}
             <FAQ/>
+            <Footer/>
         </div>
     );
 }
