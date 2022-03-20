@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 #tracks {
     width: 100vw;
     min-height: 100vh;
@@ -12,10 +14,12 @@
     background-repeat: no-repeat, repeat;
     background-position: bottom;
     background-color: #D5DDF0;
+
+    font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
-    font-family: Lato;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     color: #151B3C;
     font-size: 35px;
@@ -49,7 +53,6 @@ h1 {
 }
 
 .tracks-container .track h3 {
-    font-family: Lato;
     font-style: normal;
     font-weight: normal;
     font-size: 25px;

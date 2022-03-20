@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
 @keyframes bg-change {
     from {opacity: 1;}
     to {opacity: 0;}
   }
+
 #trees {
     position: absolute;
     width: 100%;
@@ -29,7 +32,7 @@
 }
 
 #landing-title{
-    font-family: Georgia;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 175px;
@@ -40,16 +43,28 @@
 }
 
 h2 {
-    font-family: Georgia;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 500;
+    text-align: center;
+    z-index: 1;
+    color: #FFFFFF;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
     text-align: center;
     z-index: 1;
     color: #FFFFFF;
 }
 
 #landing #register-btn {
-    background: #212C50;
+    background: #32467A;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
     color: white;
     font-size: 20px;
     margin-top: 10px;
