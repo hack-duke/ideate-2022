@@ -1,0 +1,14 @@
+#footer {
+    background-color: #1D193F;
+    height: 239px;
+    width: 100vw;
+}
+
+#social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 239px;
+    font-size: 40px;
+}
