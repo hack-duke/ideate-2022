@@ -1,20 +1,17 @@
 import React, {useState, useEffect} from 'react'
 import ButtonSlider from './ButtonSlider.js';
-import beltramelli from "../../graphics/speakers/beltramelli.jpeg";
-import aria from "../../graphics/speakers/aria.png";
-import kaitlyn from "../../graphics/speakers/kaitlyn.png";
-import shreya from "../../graphics/speakers/shreya.png";
-import roger from "../../graphics/speakers/roger.png";
+import sridhar from "../../graphics/speakers/sridhar.jpeg";
+import skapek from "../../graphics/speakers/skapek.png";
+import nina from "../../graphics/speakers/nina.jpeg";
+
 import './Speakers.css';
 
 function Speakers(){
 
     const speakers = [
-        {id : 0, name: 'Tony Beltramelli', img: beltramelli, title: 'CEO, UIZard', description: 'Tony Beltramelli is the co-founder and CEO of Uizard Technologies, a startup developing AI-powered tools to revolutionize the way people build software. He got into machine intelligence during his graduate studies at the IT University of Copenhagen and ETH Zurich. His research work on applications of deep learning has been recognized globally and featured in international media such as WIRED, Forbes, The Huffington Post and The Next Web. He was recently shortlisted in Forbes’ 30 under 30 2019 list.'},
-        {id : 1, name: 'Augustus E. Wendell', img: aria, title: 'CEO, UIZard', description: 'Tony Beltramelli is the co-founder and CEO of Uizard Technologies, a startup developing AI-powered tools to revolutionize the way people build software. He got into machine intelligence during his graduate studies at the IT University of Copenhagen and ETH Zurich. His research work on applications of deep learning has been recognized globally and featured in international media such as WIRED, Forbes, The Huffington Post and The Next Web. He was recently shortlisted in Forbes’ 30 under 30 2019 list.'},
-        {id : 2, name: 'Bonnie Fishel', img: shreya, title: 'CEO, UIZard', description: 'Tony Beltramelli is the co-founder and CEO of Uizard Technologies, a startup developing AI-powered tools to revolutionize the way people build software. He got into machine intelligence during his graduate studies at the IT University of Copenhagen and ETH Zurich. His research work on applications of deep learning has been recognized globally and featured in international media such as WIRED, Forbes, The Huffington Post and The Next Web. He was recently shortlisted in Forbes’ 30 under 30 2019 list.'},
-        {id : 3, name: 'Cici Xie', img: roger, title: 'CEO, UIZard', description: 'Tony Beltramelli is the co-founder and CEO of Uizard Technologies, a startup developing AI-powered tools to revolutionize the way people build software. He got into machine intelligence during his graduate studies at the IT University of Copenhagen and ETH Zurich. His research work on applications of deep learning has been recognized globally and featured in international media such as WIRED, Forbes, The Huffington Post and The Next Web. He was recently shortlisted in Forbes’ 30 under 30 2019 list.'},
-        {id : 4, name: 'Daniel Sieberg', img: kaitlyn , title: 'CEO, UIZard', description: 'Tony Beltramelli is the co-founder and CEO of Uizard Technologies, a startup developing AI-powered tools to revolutionize the way people build software. He got into machine intelligence during his graduate studies at the IT University of Copenhagen and ETH Zurich. His research work on applications of deep learning has been recognized globally and featured in international media such as WIRED, Forbes, The Huffington Post and The Next Web. He was recently shortlisted in Forbes’ 30 under 30 2019 list.'}
+        {id : 0, name: 'Sridhar Ramaswamy', img: sridhar, title: 'Co-Founder, Neeva', description: 'todo'},
+        {id : 1, name: 'Tim Skapek', img: skapek, title: 'CTO & Co-Founder, PROTECT3D', description: 'todo'},
+        {id : 2, name: 'Nina Polson', img: nina, title: 'Designing Manager, Google', description: 'todo'}
     ];
 
     let speakerLength = speakers.length;
@@ -44,10 +41,10 @@ function Speakers(){
     }
 
     return(
-        <div id="speakers">
+        <>
+            <div id="speakers">
             <h1>SPEAKERS</h1>
-            <h1>Coming soon!</h1>
-            {/* <div id="speakers-container">
+            <div id="speakers-container">
                 <ButtonSlider moveSlide={prevSlide} direction={"prev"}/>
                     {speakers.map((obj, index) => {
                         return (
@@ -73,8 +70,10 @@ function Speakers(){
                             className={slideIndex === index + 1 ? "dot active" : "dot"}
                             ></div>
                         ))}
-            </div> */}
+            </div>
         </div>
+        </>
+        
     )
 }
 
