@@ -25,12 +25,12 @@ function Tracks() {
                     <div className="track">
                         <img id="inequality" src={inequality}></img>
                         <h3>Inequality</h3>
-                        <p>While technology has the potential to reduce social disparities, it has more frequently further exemplified them. Facial recognition, surveillance, and other technologies disproportionately profile and incarcerate Black people. How can we design technology that supports and uplifts marginalized communities and remove the technology that harms them?</p>
+                        <p>The Inequality track targets problems regarding both social and economic inequality. Whether it is creating solutions to bridge the income gap, or finding ways to reduce disparities in gender or race, this track is built on the principle that everyone should have the capacity to reach their full potential.</p>
                     </div>
                     <div className="track">
                         <img id="education" src={education}></img>
                         <h3>Education</h3>
-                        <p>Transitioning to online learning hasn't been easy. How can we design solutions to help those struggling with learning in difficult home environments, create tools for classes transitioning to online formats, and replicate the learning experience at home?</p>
+                        <p>The Education track pairs hackers with educators, reaching out to all levels of subjects and skills. In addition to HackDuke sponsored Education events, projects aim to increase visibility of technology and to introduce basic skills to the public.</p>
                     </div>
                     <div className="track">
                         <img id="environment" src={environment}></img>
