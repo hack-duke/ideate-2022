@@ -134,6 +134,15 @@
     cursor: pointer;
 }
 
+@media only screen and (max-width: 860px) {
+    #right {
+        display: none;
+    }
+    #left {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .faq-col, .faq-col {
         width: 100%;
@@ -142,6 +151,7 @@
         background-size: 1400px;
     }
 }
+
 
 @media only screen and (max-width: 400px) {
     #faq {
