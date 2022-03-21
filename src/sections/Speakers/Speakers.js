@@ -43,35 +43,35 @@ function Speakers(){
     return(
         <>
             <div id="speakers">
-            <h1>SPEAKERS</h1>
-            <div id="speakers-container">
-                <ButtonSlider moveSlide={prevSlide} direction={"prev"}/>
-                    {speakers.map((obj, index) => {
-                        return (
-                            <div key={obj.id} className={slideIndex === index + 1 ? "slide active-anim" : "slide"}>
+                <h1>SPEAKERS</h1>
+                <div id="speakers-container">
+                    <ButtonSlider moveSlide={prevSlide} direction={"prev"}/>
+                        {speakers.map((obj, index) => {
+                            return (
+                                <div key={obj.id} className={slideIndex === index + 1 ? "slide active-anim" : "slide"}>
 
-                                {slideIndex === index + 1  && (
-                                    <> 
-                                        <img src={obj.img}/>
-                                        <h3>{obj.name}</h3>
-                                        <h4>{obj.title}</h4>
-                                        <p>{obj.description}</p>
-                                    </>
-                                )} 
-                            </div>
-                        )
-                    })}
-                    <ButtonSlider moveSlide={nextSlide} direction={"next"}/>
+                                    {slideIndex === index + 1  && (
+                                        <> 
+                                            <img src={obj.img}/>
+                                            <h3>{obj.name}</h3>
+                                            <h4>{obj.title}</h4>
+                                            <p>{obj.description}</p>
+                                        </>
+                                    )} 
+                                </div>
+                            )
+                        })}
+                        <ButtonSlider moveSlide={nextSlide} direction={"next"}/>
+                </div>
+                <div className="container-dots">
+                            {Array.from({length: speakerLength}).map((item, index) => (
+                                <div 
+                                onClick={() => moveDot(index + 1)}
+                                className={slideIndex === index + 1 ? "dot active" : "dot"}
+                                ></div>
+                            ))}
+                </div>
             </div>
-            <div className="container-dots">
-                        {Array.from({length: speakerLength}).map((item, index) => (
-                            <div 
-                            onClick={() => moveDot(index + 1)}
-                            className={slideIndex === index + 1 ? "dot active" : "dot"}
-                            ></div>
-                        ))}
-            </div>
-        </div>
         </>
         
     )
