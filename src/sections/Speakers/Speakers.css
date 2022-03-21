@@ -1,27 +1,33 @@
-@media all and (max-height: 1000px) {
-    
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 #speakers {
-  background-color: #E5E5E5;
+  background-color: #32467A;
   position: relative;
-  height: 100vh;
-  width: 100vw;
+  height: 60vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: -30%;
 }
 
-#speakers h1{
-    color: #32467A;
-    translate: 0px, 80px;
+ h1{
+    color: #FEFEFE;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
 }
-
+h3 {
+  font-size: 25px;
+  font-weight: 500;
+}
+h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
 #speakers-container{
     width: 100%;
-    height: 90%;
+    height: 100%;
     margin-bottom: 10%;
     display: flex;
     align-items: center;
@@ -47,9 +53,11 @@
     height: 270px;
     border-radius: 50%;
     object-fit: cover;
+    background-color: white;
 }
 
 .slide h3, h4{
+    color: #FEFEFE;
     margin-block-start: 0.7em;
     margin-block-end: 0.3em;
     margin-inline-start: 0px;
@@ -59,6 +67,7 @@
 .btn-slide {
     cursor: pointer;
     border: none;
+    background: none;
 }
   
 .next {
@@ -85,6 +94,7 @@
     position: relative;
     display: flex;
     bottom: 50px;
+
   }
   .dot {
     width: 23px;
@@ -92,7 +102,30 @@
     border-radius: 50%;
     margin: 0 5px;
     background: #D5DDF0;
+    cursor: pointer;
   }
   .dot.active {
     background-image: url("../../graphics/assets/speakers/currentDot.svg");
+    background-color: #32467A;
+    object-fit: cover;
+
+    width: 39.37px;
+    height: 41px;
+    transform: translateY(-33%);
+  }
+
+  @media only screen and (max-width: 700px) {
+    .slide img{
+      width: 200px;
+      height: 200px;
+  
+    }
+    h3 {
+      font-size: 20px;
+      font-weight: 500;
+    }
+    h4 {
+      font-size: 15px;
+      font-weight: 500;
+    }
   }
