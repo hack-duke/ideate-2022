@@ -3,15 +3,21 @@ import ButtonSlider from './ButtonSlider.js';
 import sridhar from "../../graphics/speakers/sridhar.jpeg";
 import skapek from "../../graphics/speakers/skapek.png";
 import nina from "../../graphics/speakers/nina.jpeg";
+import diego from "../../graphics/speakers/diego.jpeg";
+import koehn from "../../graphics/speakers/koehn.jpeg";
+import winter from "../../graphics/speakers/winter.jpeg";
 
 import './Speakers.css';
 
 function Speakers(){
 
     const speakers = [
-        {id : 0, name: 'Sridhar Ramaswamy', img: sridhar, title: 'Co-Founder, Neeva', description: 'todo'},
+        {id : 0, name: 'Sridhar Ramaswamy', img: sridhar, title: 'Ceo & Co-Founder, Neeva', description: 'todo'},
         {id : 1, name: 'Tim Skapek', img: skapek, title: 'CTO & Co-Founder, PROTECT3D', description: 'todo'},
-        {id : 2, name: 'Nina Polson', img: nina, title: 'Designing Manager, Google', description: 'todo'}
+        {id : 2, name: 'Nina Polson', img: nina, title: 'Designing Manager, Google Maps', description: 'todo'},
+        {id : 3, name: 'Christina Koehn', img: koehn, title: 'Principal Creative Director for Windows + Devices at Microsoft, Co-Founder of Women in Design at Microsoft', description: 'todo'},
+        {id : 4, name: 'Diego Baca', img: diego, title: 'Partner Director of Design for Windows', description: 'todo'},
+        {id : 4, name: 'Sharon Winter', img: winter, title: 'Vice President, Atomic VC', description: 'todo'}
     ];
 
     let speakerLength = speakers.length;
@@ -55,7 +61,7 @@ function Speakers(){
                                             <img src={obj.img}/>
                                             <h3>{obj.name}</h3>
                                             <h4>{obj.title}</h4>
-                                            <p>{obj.description}</p>
+                                            {/* <p>{obj.description}</p> */}
                                         </>
                                     )} 
                                 </div>
