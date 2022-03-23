@@ -85,7 +85,7 @@ function Navbar() {
                         <span className="white-line">&nbsp;</span>
                     </div> */}
                 </div>
-                 <div id="navbar-title" className={"navbar-title"}><a target="_blank" rel="noopener noreferrer" href={"#landing"}>HackDuke</a></div>
+                 <div id="navbar-title" className={"navbar-title"}><AnchorLink rel="noopener noreferrer" href={"#landing"}>HackDuke</AnchorLink></div>
             </div>
         </div>
     )

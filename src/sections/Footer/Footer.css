@@ -1,6 +1,6 @@
 #footer {
-    background-color: #1D193F;
-    height: 239px;
+    background-color: #151B3C;
+    height: 100px;
     width: 100vw;
 }
 
@@ -9,6 +9,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 239px;
+    height: 100px;
     font-size: 40px;
 }
