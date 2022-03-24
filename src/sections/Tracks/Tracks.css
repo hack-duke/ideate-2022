@@ -61,6 +61,7 @@ h4 {
     width: 15%;
     min-width: 300px;
     white-space: normal;
+    min-height: 600px;
 }
 
 .tracks-container .track h3 {

@@ -10,7 +10,7 @@ function Schedule() {
 
         <div id="schedule">
             <div className={"schedule-container"}>
-                <h1 id="schedule-title">Schedule</h1>
+                <h1 id="schedule-title">Example Schedule from 2021</h1>
                 <Tabs>
                     <TabList>
                         <Tab><h3>Saturday April 10</h3></Tab>
