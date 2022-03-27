@@ -12,7 +12,7 @@ import './Speakers.css';
 function Speakers(){
 
     const speakers = [
-        {id : 0, name: 'Sridhar Ramaswamy', img: sridhar, title: 'Ceo & Co-Founder, Neeva', description: 'todo'},
+        {id : 0, name: 'Sridhar Ramaswamy', img: sridhar, title: 'CEO & Co-Founder, Neeva', description: 'todo'},
         {id : 1, name: 'Tim Skapek', img: skapek, title: 'CTO & Co-Founder, PROTECT3D', description: 'todo'},
         {id : 2, name: 'Nina Polson', img: nina, title: 'Designing Manager, Google Maps', description: 'todo'},
         {id : 3, name: 'Christina Koehn', img: koehn, title: 'Principal Creative Director for Windows + Devices at Microsoft, Co-Founder of Women in Design at Microsoft', description: 'todo'},
