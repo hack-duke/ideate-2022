@@ -2,8 +2,6 @@ import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import './Schedule.css';
 
-import clouds from '../../graphics/schedule-top-right.svg';
-import 'react-tabs/style/react-tabs.css';
 
 function Schedule() {
     return (
@@ -27,7 +25,6 @@ function Schedule() {
                     </TabPanel>
                     <TabPanel>
                         <div className="day">
-
                             <p>10am        Bob Ross MS Paint Event</p>
                             <p>3:30pm    Submissions Due</p>
                             <p>4pm         Judging Begins</p>
