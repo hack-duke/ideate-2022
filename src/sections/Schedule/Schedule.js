@@ -1,132 +1,57 @@
 import React from "react";
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import { Scheduler } from "@aldabil/react-scheduler";
+import Paper from '@mui/material/Paper';
+import {
+    Scheduler,
+    WeekView,
+    DayView,
+    Appointments,
+    AppointmentTooltip,
+} from '@devexpress/dx-react-scheduler-material-ui';
+import { ViewState } from '@devexpress/dx-react-scheduler';
 import './Schedule.css';
 
-
 function Schedule() {
+
+    const currentDate = '2022-04-09';
+    const schedulerData = [
+        { startDate: '2022-04-09T09:45', endDate: '2022-04-09T10:30', title: 'Registration'},
+        { startDate: '2022-04-09T10:45', endDate: '2022-04-09T12:00', title: 'Opening Ceremony' },
+        { startDate: '2022-04-09T13:00', endDate: '2022-04-09T14:00', title: 'Workshop #1: Ideation' },
+        { startDate: '2022-04-09T14:30', endDate: '2022-04-09T15:30', title: 'Talk: Making a complicated concept intuitive' },
+        { startDate: '2022-04-09T16:00', endDate: '2022-04-09T17:00', title: 'Workshop #2: UI/UX' },
+        { startDate: '2022-04-09T17:30', endDate: '2022-04-09T18:30', title: 'Workshop #3: Pitching' },
+        { startDate: '2022-04-09T19:00', endDate: '2022-04-09T24:00', title: 'Office Hours' },
+        { startDate: '2022-04-09T20:00', endDate: '2022-04-09T21:00', title: 'Board Game Night!' },
+        { startDate: '2022-04-09T21:00', endDate: '2022-04-09T22:00', title: 'Online Games!' },
+        { startDate: '2022-04-09T22:00', endDate: '2022-04-09T24:00', title: 'Chill Zone' },
+        { startDate: '2022-04-10T10:00', endDate: '2022-04-10T13:00', title: 'Office Hours' },
+        { startDate: '2022-04-10T13:00', endDate: '2022-04-10T13:00', title: 'SUBMISSIONS DUE' },
+        { startDate: '2022-04-10T13:30', endDate: '2022-04-10T15:00', title: 'Judging' },
+        { startDate: '2022-04-10T16:45', endDate: '2022-04-10T18:30', title: 'Closing Ceremony' },
+    ];
+
     return (
 
         <div id="schedule">
             <div className={"schedule-container"}>
                 <h1 id="schedule-title">Schedule</h1>
-                <Scheduler
-                    view="week"
-                    week={{weekDays: [0, 1], weekStartOn: 6, startHour: 9, endHour: 24, step: 60}}
-                    selectedDate={new Date("2022 4 9")}
-                    events={[
-                        {
-                            event_id: 1,
-                            title: "Registration",
-                            start: new Date("2022 4 9 09:45"),
-                            end: new Date("2022 4 9 10:30"),
-                        },
-                        {
-                            event_id: 2,
-                            title: "Opening Ceremony",
-                            start: new Date("2022 4 9 10:45"),
-                            end: new Date("2022 4 9 12:00"),
-                        },
-                        {
-                            event_id: 3,
-                            title: "Workshop #1: Ideation",
-                            start: new Date("2022 4 9 13:00"),
-                            end: new Date("2022 4 9 14:00"),
-                        },
-                        {
-                            event_id: 4,
-                            title: "Talk: Making a Complicated Concept Intuitive",
-                            start: new Date("2022 4 9 14:30"),
-                            end: new Date("2022 4 9 15:30"),
-                        },
-                        {
-                            event_id: 5,
-                            title: "Workshop #2: UI/UX",
-                            start: new Date("2022 4 9 16:00"),
-                            end: new Date("2022 4 9 17:00"),
-                        },
-                        {
-                            event_id: 6,
-                            title: "Workshop #3: Pitching",
-                            start: new Date("2022 4 9 17:30"),
-                            end: new Date("2022 4 9 18:30"),
-                        },
-                        {
-                            event_id: 7,
-                            title: "Team Formation & Office Hours",
-                            start: new Date("2022 4 9 19:00"),
-                            end: new Date("2022 4 9 24:00"),
-                        },
-                        {
-                            event_id: 8,
-                            title: "Board Game Night!",
-                            start: new Date("2022 4 9 20:00"),
-                            end: new Date("2022 4 9 21:00"),
-                        },
-                        {
-                            event_id: 9,
-                            title: "Online Games!",
-                            start: new Date("2022 4 9 21:00"),
-                            end: new Date("2022 4 9 22:00"),
-                        },
-                        {
-                            event_id: 10,
-                            title: "Chill Zone",
-                            start: new Date("2022 4 9 22:00"),
-                            end: new Date("2022 4 9 24:00"),
-                        },
-                        {
-                            event_id: 11,
-                            title: "Office Hours",
-                            start: new Date("2022 4 10 10:00"),
-                            end: new Date("2022 4 10 13:00"),
-                        },
-                        {
-                            event_id: 12,
-                            title: "Submissions Due",
-                            start: new Date("2022 4 10 12:30"),
-                            end: new Date("2022 4 10 13:00"),
-                        },
-                        {
-                            event_id: 13,
-                            title: "Judging",
-                            start: new Date("2022 4 10 13:30"),
-                            end: new Date("2022 4 10 15:00"),
-                        },
-                        {
-                            event_id: 14,
-                            title: "Closing Ceremony",
-                            start: new Date("2022 4 10 16:45"),
-                            end: new Date("2022 4 10 18:30"),
-                        },
-                    ]}
-                />
-                {/*<Tabs>*/}
-                {/*    <TabList>*/}
-                {/*        <Tab><h3>Saturday April 10</h3></Tab>*/}
-                {/*        <Tab><h3>Sunday April 11</h3></Tab>*/}
-                {/*    </TabList>*/}
-                {/*    <TabPanel>*/}
-
-                {/*        <div className="day">*/}
-                {/*            <p>9:45AM - 10:30AM          Registration</p>*/}
-                {/*            <p>10:45AM - 12:00PM        Opening Ceremony</p>*/}
-                {/*            <p>1:00PM - 2:00PM            Workshop #1: Ideation w/ Nina Polson</p>*/}
-                {/*            <p>2:30PM - 3:30PM            Talk: Making a complicated concept intuitive w/ Tim Skapek</p>*/}
-                {/*            <p>4:00PM - 5:00PM            Workshop #2: UI/UX w/ Sharon Winter</p>*/}
-                {/*            <p>5:30PM - 6:30PM            Workshop #3: Pitching w/ AtomicVC</p>*/}
-                {/*            <p>4:00PM - 5:00PM            Team Formation and Office Hours</p>*/}
-                {/*        </div>*/}
-                {/*    </TabPanel>*/}
-                {/*    <TabPanel>*/}
-                {/*        <div className="day">*/}
-                {/*            <p>10am        Bob Ross MS Paint Event</p>*/}
-                {/*            <p>3:30pm    Submissions Due</p>*/}
-                {/*            <p>4pm         Judging Begins</p>*/}
-                {/*            <p>7pm         Closing and Awards Ceremony</p>*/}
-                {/*        </div>*/}
-                {/*    </TabPanel>*/}
-                {/*</Tabs>*/}
+                <Paper>
+                    <Scheduler
+                        data={schedulerData}
+                    >
+                        <ViewState
+                            currentDate={currentDate}
+                        />
+                        <DayView
+                            startDayHour={9}
+                            endDayHour={24}
+                            intervalCount={2}
+                            cellDuration={60}
+                        />
+                        <Appointments />
+                        <AppointmentTooltip />
+                    </Scheduler>
+                </Paper>
             </div>
         </div>
     )
