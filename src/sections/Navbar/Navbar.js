@@ -4,19 +4,6 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 
 function Navbar() {
-    // const handleScroll = () => {
-    //     if (window.scrollY > window.innerHeight) {
-    //         document.querySelector("#navbar").className = "navbar-color"
-    //         document.querySelector("#navbar-title").className = "navbar-title visible"
-    //     } else {
-    //         document.querySelector("#navbar").className = "navbar";
-    //         document.querySelector("#navbar-title").className = "navbar-title hidden"
-    //     }
-    // };
-
-    // window.addEventListener("scroll", handleScroll);
-
-
     var prevScrollPos = window.pageYOffset;
 
     const handleScroll = () => {
@@ -33,19 +20,19 @@ function Navbar() {
         document.querySelector("#speakers-texts").children[1].style.visibility = ""
         document.querySelector("#tracks-texts").children[1].style.visibility = ""
         document.querySelector("#about-texts").children[1].style.visibility = ""
-        if(window.scrollY > (5.92*window.innerHeight - 0.28*window.innerHeight)){
+        if(window.scrollY > (5.92*window.innerHeight - 0.28*window.innerHeight) && window.innerWidth > 700){
             document.querySelector("#faq-texts").children[1].style.visibility = "visible"
         }
-        else if(window.scrollY > (4.92*window.innerHeight - 0.28*window.innerHeight)){
+        else if(window.scrollY > (4.92*window.innerHeight - 0.28*window.innerHeight) && window.innerWidth > 700){
             document.querySelector("#schedule-texts").children[1].style.visibility = "visible"
         }
-        else if(window.scrollY > (3.92*window.innerHeight - 0.28*window.innerHeight)){
+        else if(window.scrollY > (3.92*window.innerHeight - 0.28*window.innerHeight) && window.innerWidth > 700){
             document.querySelector("#speakers-texts").children[1].style.visibility = "visible"
         }
-        else if(window.scrollY > (2.3*window.innerHeight - 0.28*window.innerHeight)){
+        else if(window.scrollY > (2.3*window.innerHeight - 0.28*window.innerHeight) && window.innerWidth > 700){
             document.querySelector("#tracks-texts").children[1].style.visibility = "visible"
         }
-        else if (window.scrollY > (1*window.innerHeight - 0.28*window.innerHeight)) {
+        else if (window.scrollY > (1*window.innerHeight - 0.28*window.innerHeight) && window.innerWidth > 700) {
             document.querySelector("#about-texts").children[1].style.visibility = "visible"
         }
         else {
@@ -53,6 +40,15 @@ function Navbar() {
             document.querySelector("#navbar-title").className = "navbar-title hidden"
         }
     };
+
+    const checkBoxChange = () => {
+        if(document.querySelector("#content-left").style.display === "block"){
+            document.querySelector("#content-left").style.display = "none"
+        }
+        else{
+            document.querySelector("#content-left").style.display = "block"
+        }
+    }
 
     window.addEventListener("scroll", handleScroll);
 
@@ -85,7 +81,11 @@ function Navbar() {
                         <span className="white-line">&nbsp;</span>
                     </div> */}
                 </div>
-                 <div id="navbar-title" className={"navbar-title"}><AnchorLink rel="noopener noreferrer" href={"#landing"}>HackDuke</AnchorLink></div>
+                <div id="content-right">
+                    <div id="navbar-title" className={"navbar-title"}><AnchorLink rel="noopener noreferrer" href={"#landing"}>HackDuke</AnchorLink></div>
+                    <input class="navbar-btn" type="checkbox" id="navbar-btn" onChange={checkBoxChange}/>
+                    <label class="navbar-icon" for="navbar-btn"><span class="navicon"></span></label>
+                </div>
             </div>
         </div>
     )

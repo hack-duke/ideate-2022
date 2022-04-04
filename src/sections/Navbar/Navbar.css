@@ -1,63 +1,3 @@
-/* #navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
-
-    width: 100%;
-    height: 110px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#navbar.navbar-color {
-    background: linear-gradient(180deg, #FBE6DB 66.36%, rgba(251, 230, 219, 0) 100%);
-    transition: background-color 200ms linear;
-}
-
-#navbar-title {
-    font-family: Lora;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 41px;
-
-    color: #FF5732;
-}
-
-#navbar-title.navbar-title.hidden {
-    visibility: hidden;
-    opacity: 0;
-}
-
-#navbar-title.navbar-title.visible {
-    visibility: visible;
-    opacity: 1;
-    transition: visibility 0s linear 0s, opacity 700ms;
-}
-
-#navbar #contents {
-    width: inherit;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.navbar-text {
-    font-family: Lato;
-    font-style: italic;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    padding: 10px 40px 40px;
-    color: #FFFFFF;
-} */
-
-
 #navbar {
     position: fixed;
     top: 0;
@@ -87,9 +27,6 @@
     font-size: 28px;
     line-height: 41px;
     margin-right: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     padding-top: 5px;
     /* margin: auto 70px auto auto; */
     /* padding-top: 17px;
@@ -164,6 +101,135 @@
     visibility: visible;
 }
 
-/* #sponsors-texts:hover .white-line {
-    visibility: visible;
-} */
+#content-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-icon {
+    cursor: pointer;
+    display: none;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+.navbar-icon .navicon {
+    background: #FFFFFF;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+}
+
+.navbar-icon .navicon:before {
+    top: 5px;
+}
+  
+.navbar-icon .navicon:after {
+    top: -5px;
+}
+
+.navbar-btn {
+    display: none;
+  }
+  
+.navbar-btn:checked ~ .navbar {
+    max-height: 240px;
+  }
+  
+.navbar-btn:checked ~ .navbar-icon .navicon {
+    background: transparent;
+  }
+  
+.navbar-btn:checked ~ .navbar-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+.navbar-btn:checked ~ .navbar-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+.navbar-btn:checked ~ .navbar-icon:not(.steps) .navicon:before,
+.navbar-btn:checked ~ .navbar-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+
+.navbar-icon .navicon:before,
+.navbar-icon .navicon:after {
+  background: #FFFFFF;
+  content: '';
+  display: none;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+    #navbar #contents {
+        flex-direction: column-reverse;
+        /* margin-top: 515px; */
+        margin-top: 0px;
+    }
+
+    #content-right {
+        justify-content: space-between;
+    }
+
+    #navbar-title {
+        margin-left: 30px;
+        margin-right: 0px;
+    }
+
+    .navbar-icon {
+        display: block;
+    }
+    
+    .navbar-icon .navicon:before,
+    .navbar-icon .navicon:after {
+        display: block;
+    }
+
+    #navbar #content-left {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 0px;
+        max-height: 0;
+        transition: max-height .2s ease-out;
+        display: none;
+        position: absolute;
+    }
+
+    .navbar-text {
+        padding-left: 34px;
+        background-color: rgba(10, 17, 43);
+        width: 2000%;
+    }
+
+    #faq-texts {
+        padding-bottom: 15px;
+    }
+
+    #about-texts:hover .white-line {
+        visibility: hidden;
+    }
+    
+    #tracks-texts:hover .white-line {
+        visibility: hidden;
+    }
+    
+    #speakers-texts:hover .white-line {
+        visibility: hidden;
+    }
+    
+    #schedule-texts:hover .white-line {
+        visibility: hidden;
+    }
+    
+    #faq-texts:hover .white-line {
+        visibility: hidden;
+    }
+}
