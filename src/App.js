@@ -16,7 +16,7 @@ function App() {
 
     return (
         <div>
-            {window.innerWidth >= 768 && <Navbar/>}
+            <Navbar/>
             <Landing/>
             <About/>
             <Tracks/>
