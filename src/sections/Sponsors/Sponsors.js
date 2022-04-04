@@ -1,10 +1,11 @@
 import React from "react";
 import "./Sponsors.css";
 
-import huawei from "../../graphics/sponsors/huawei.png";
-import iss from "../../graphics/sponsors/duke-iss.png";
-import colab from "../../graphics/sponsors/duke-colab.png";
-import rhodes from "../../graphics/sponsors/duke-rhodes.png";
+import hrt from "../../graphics/assets/sponsors/hrt.png";
+import imc from "../../graphics/assets/sponsors/imc.png";
+import js from "../../graphics/assets/sponsors/js.png";
+import mems from "../../graphics/assets/sponsors/mems.svg";
+import rhodes from "../../graphics/assets/sponsors/iid.png";
 
 function Sponsors() {
     return (
@@ -12,10 +13,11 @@ function Sponsors() {
             <div className={"sponsors-container"}>
                 <h1 className={"sponsor-title"}>Sponsors</h1>
                 <div className={"sponsor-logos"}>
-                    <img style={{width: "113px"}} src={huawei} alt={"huawei"}/>
-                    <img style={{width: "305px", paddingBottom: "40px"}} src={iss} alt={"duke-iss"}/>
-                    <img style={{width: "213px"}} src={colab} alt={"duke-colab"}/>
-                    <img style={{width: "229px"}} src={rhodes} alt={"duke-rhodes"}/>
+                    <img style={{height: "75px"}} src={imc} alt={"IMC"}/>
+                    <img style={{height: "75px"}} src={hrt} alt={"Hudson River Trading"}/>
+                    <img style={{height: "75px"}} src={rhodes} alt={"Duke Rhodes"}/>
+                    <img style={{height: "75px"}} src={js} alt={"Jane Street"}/>
+                    <img style={{height: "75px"}} src={mems} alt={"Mems"}/>
                 </div>
             </div>
         </div>

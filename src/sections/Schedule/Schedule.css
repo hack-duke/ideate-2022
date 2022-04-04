@@ -10,7 +10,7 @@
 
     background-image: url("/src/graphics/assets/schedule/clouds.svg");
     background-position: bottom;
-    background-size: contain;
+    background-size: cover;
     background-color: #222F58;
 }
 

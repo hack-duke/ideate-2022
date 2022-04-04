@@ -20,12 +20,9 @@ function App() {
             <Landing/>
             <About/>
             <Tracks/>
-            {/*<Purpose/>*/}
-            {/*<Schedule/>*/}
             <Speakers/>
             <Schedule/>
-            {/*<Speakers/>*/}
-            {/*<Sponsors/>*/}
+            <Sponsors/>
             <FAQ/>
             <Footer/>
         </div>
